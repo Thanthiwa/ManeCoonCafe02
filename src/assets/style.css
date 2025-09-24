@@ -1,0 +1,16 @@
+:root { --brand:#8B4513; --brand-2:#DEB887; }
+body { font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding-top:66px; }
+.hero-full { width:100vw; height:100vh; overflow:hidden; position:relative; margin-left:calc(-50vw + 50%); }
+.fade-in { opacity:0; transform: translateY(20px); transition: all .6s ease; }
+.fade-in.visible { opacity:1; transform: translateY(0); }
+.scroll-to-top { position: fixed; bottom: 24px; right: 24px; display: grid; place-items:center; width:44px; height:44px; border-radius:50%; border:none; background:#111; color:#fff; opacity:0; pointer-events:none; transition:opacity .2s ease; z-index:999; }
+.scroll-to-top.show { opacity:1; pointer-events:auto; }
+.brand-text { font-weight:600; }
+.custom-navbar .nav-link.active { color: var(--brand) !important; }
+.gallery-image { width:100%; height:260px; object-fit:cover; border-radius:12px; }
+.gallery-card { position:relative; }
+.gallery-image-container { position:relative; cursor:pointer; }
+.gallery-image-container .gallery-overlay { position:absolute; inset:0; background:rgba(0,0,0,.25); opacity:0; display:grid; place-items:center; border-radius:12px; transition: opacity .2s ease; }
+.gallery-image-container:hover .gallery-overlay { opacity:1; color:#fff; }
+.custom-footer a { color: #fff; }
+.section-title { font-weight:600; }
